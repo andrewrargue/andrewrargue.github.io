@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Exchange — Andrew Argue</title>
+  <meta name="description" content="UX audit and rapid design iteration for a multi-platform financial trading system." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+  <header class="nav" role="banner">
+    <div class="container">
+      <nav class="nav__inner" aria-label="Primary navigation">
+        <a href="../index.html" class="nav__logo">Andrew Argue</a>
+        <ul class="nav__links" role="list">
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="nav__overlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="../about.html">About</a>
+    <a href="../contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ── 1. Hero ──────────────────────────────────────────── -->
+    <section class="cs-hero">
+      <div class="container" data-stagger>
+        <p class="cs-hero__eyebrow cs-label">Case study</p>
+        <h1 class="cs-hero__title">One Exchange — Trading Platform Redesign</h1>
+        <p class="cs-hero__subtitle">Rapid design iteration across four interconnected platforms for a multi-platform financial trading system.</p>
+        <div class="cs-hero__meta">
+          <div class="cs-meta-item">
+            <p class="cs-meta__label">Client</p>
+            <p class="cs-meta__value">One Exchange</p>
+          </div>
+          <div class="cs-meta-item">
+            <p class="cs-meta__label">Role</p>
+            <p class="cs-meta__value">Product Designer</p>
+          </div>
+          <div class="cs-meta-item">
+            <p class="cs-meta__label">Year</p>
+            <p class="cs-meta__value">2026</p>
+          </div>
+          <div class="cs-meta-item">
+            <p class="cs-meta__label">Team</p>
+            <p class="cs-meta__value">Patricia Orozco (Product Design, Art Direction)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 2. Hero image ────────────────────────────────────── -->
+    <div class="cs-hero-image-wrap" data-animate>
+      <div
+        class="cs-hero-image"
+        role="img"
+        aria-label="One Exchange trading platform — hero image"
+        data-label="Hero image — One Exchange"
+        style="background-image: url('../images/OX/OX Trading - 1.png'); background-position: center top;"
+      ></div>
+    </div>
+
+    <!-- ── 3. Overview ──────────────────────────────────────── -->
+    <section class="cs-overview">
+      <div class="container">
+        <div class="cs-overview__grid">
+
+          <div class="cs-overview__left" data-animate>
+            <p class="cs-overview__label cs-label">Overview</p>
+            <div class="cs-body-text">
+              <p>One Exchange operates four interconnected platforms: OX Trading Platform (trader and broker views), OX CO2 Trading, and a Customer Portal. We focused deep design iteration on the OX Trading Platform as the flagship product.</p>
+              <p>The engagement required designing for high-information-density environments where traders make split-second decisions. We designed 16 flows across 79 screens, spanning trader views, broker views, and login.</p>
+            </div>
+          </div>
+
+          <div class="cs-overview__right" data-animate>
+
+            <div class="cs-tag-group">
+              <p class="cs-tag-group__label cs-label">Disciplines</p>
+              <div class="cs-tag-group__tags">
+                <span class="cs-tag">Product Design</span>
+                <span class="cs-tag">FinTech</span>
+                <span class="cs-tag">Design Systems</span>
+              </div>
+            </div>
+
+            <div class="cs-tag-group">
+              <p class="cs-tag-group__label cs-label">Scope</p>
+              <ul class="cs-objectives-list">
+                <li>OX Trading Platform — trader and broker views</li>
+                <li>OX CO2 Trading — carbon trading views</li>
+                <li>Customer Portal — layout, report views, table patterns</li>
+                <li>Cross-platform — login flows, settings, confirms, indices</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 4. Body sections ──────────────────────────────────── -->
+    <div class="cs-sections">
+      <div class="container">
+
+        <!-- Information density -->
+        <div class="cs-section" data-animate>
+          <div class="cs-section__header">
+            <p class="cs-label">Key challenge — Data density</p>
+            <h2 class="cs-section__title">Hierarchy traders can read at a glance under pressure.</h2>
+          </div>
+          <div class="cs-split">
+            <div class="cs-split__text">
+              <div class="cs-body-text">
+                <p>Financial trading requires surfacing a large volume of data without creating cognitive overload. Every element on the trading desk competes for attention — the design system had to establish clear hierarchy that traders could read at a glance under pressure.</p>
+                <p>I deliberately desaturated the overall colour palette — not as a wholesale redesign, but as a series of careful, incremental changes that respected the mental models traders already had of the platform. Heavy, saturated colour blocking in the original design meant every element competed equally for attention. By letting structural chrome (headers, dividers, row striping) recede, the few remaining colour signals — bid and offer cells, hold states, pinned rows — could actually register as meaningful when a trader's eye landed on them.</p>
+                <p>I also clarified the navigation hierarchy with more intentional colour use: primary actions, utility toggles, and platform navigation became three visually distinct groups instead of one undifferentiated row of buttons.</p>
+              </div>
+            </div>
+            <div class="cs-split__media">
+              <div class="cs-image" data-label="Trading desk design" role="img" aria-label="Trading desk design" style="background-image: url('../images/OX/OX Trading - 2.png'); background-position: center top;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trader vs broker view -->
+        <div class="cs-section" data-animate>
+          <div class="cs-section__header">
+            <p class="cs-label">Key challenge — Dual views</p>
+            <h2 class="cs-section__title">Two fundamentally different users. One coherent system.</h2>
+          </div>
+          <div class="cs-split cs-split--flip">
+            <div class="cs-split__media">
+              <div class="cs-image" data-label="Trader and broker views" role="img" aria-label="Trader and broker views" style="background-image: url('../images/OX/OX Trading - 3.png'); background-position: center top;"></div>
+            </div>
+            <div class="cs-split__text">
+              <div class="cs-body-text">
+                <p>The trader view is built for speed — placing and managing orders, monitoring live market data, and acting on position changes in real time. Every element is optimised for decision velocity. Screen space is dense by design.</p>
+                <p>The broker view serves a different purpose: oversight. Brokers monitor client activity across multiple accounts, manage the order book, and review the trade book. The information hierarchy shifts from action-first to visibility-first — same underlying data, different emphasis and layout logic.</p>
+                <p>Designing both views within one component system required establishing which patterns were shared and which needed to diverge — without fracturing the visual language between them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dialogue system -->
+        <div class="cs-section" data-animate>
+          <div class="cs-section__header">
+            <p class="cs-label">Key challenge — Dialogue system</p>
+            <h2 class="cs-section__title">Order confirmations and modals required systematic thinking across dozens of edge cases.</h2>
+          </div>
+          <div class="cs-split">
+            <div class="cs-split__text">
+              <div class="cs-body-text">
+                <p>Order confirmations and modals required systematic thinking across dozens of edge cases — every trade type, error state, and confirmation flow needed to follow the same underlying pattern without fragmenting into one-off solutions.</p>
+              </div>
+            </div>
+            <div class="cs-split__media">
+              <div class="cs-image" data-label="Dialogue system iterations" role="img" aria-label="Dialogue system" style="background-image: url('../images/OX/OX Trading - 4.png'); background-position: center top;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- New order flow -->
+        <div class="cs-section" data-animate>
+          <div class="cs-section__header">
+            <p class="cs-label">Key challenge — New order flow</p>
+            <h2 class="cs-section__title">The most iterated screen on the project — 37 versions to get it right.</h2>
+          </div>
+          <div class="cs-split cs-split--flip">
+            <div class="cs-split__media">
+              <div class="cs-image" data-label="New order flow" role="img" aria-label="New order flow" style="background-image: url('../images/OX/OX Trading - 5.png'); background-position: center top;"></div>
+            </div>
+            <div class="cs-split__text">
+              <div class="cs-body-text">
+                <p>The new order flow is the most critical interaction on the trading desk — the path from intent to placed trade. It needed to handle multiple order types, validation states, and confirmation steps without adding friction to what traders do dozens of times a day.</p>
+                <p>The New Order modal went through 37 iterations to reach a pattern that handled the full range of trade types, error states, and confirmation flows without fragmenting.</p>
+                <p>Early versions had too many competing tab styles, with no clear logic for when to use which. This evolved into three distinct levels of selection: tabs for primary trade type, radio buttons for sub-options, and dropdowns for detailed parameters — each level visually distinct so traders always knew what kind of choice they were making.</p>
+                <p>37 iterations across layout, field order, error handling, and confirmation treatment before reaching a pattern that felt fast and trustworthy under real trading conditions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order book -->
+        <div class="cs-section" data-animate>
+          <div class="cs-section__header">
+            <p class="cs-label">Key challenge — Order book</p>
+            <h2 class="cs-section__title">Live market data at a density traders can act on.</h2>
+          </div>
+          <div class="cs-split">
+            <div class="cs-split__text">
+              <div class="cs-body-text">
+                <p>The order book surfaces bid and ask prices, volumes, and market depth in real time. At this density, every typographic and colour decision has a functional consequence — misread data means a bad trade.</p>
+                <p>Colour, weight, and spacing were calibrated to let traders parse price levels instantly, with visual differentiation between bid, ask, and spread that holds up under extended screen time.</p>
+              </div>
+            </div>
+            <div class="cs-split__media">
+              <div class="cs-image" data-label="Order book" role="img" aria-label="Order book" style="background-image: url('../images/OX/OX Trading - 6.png'); background-position: center top;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI kit and handoff -->
+        <div class="cs-section" data-animate>
+          <div class="cs-section__header">
+            <p class="cs-label">Deliverable — UI kit</p>
+            <h2 class="cs-section__title">A handoff file the development team actually wanted to use.</h2>
+          </div>
+          <div class="cs-split cs-split--flip">
+            <div class="cs-split__media">
+              <div class="cs-image" data-label="UI kit and handoff" role="img" aria-label="UI kit and handoff" style="background-image: url('../images/OX/OX Trading - 7.png'); background-position: center top;"></div>
+            </div>
+            <div class="cs-split__text">
+              <div class="cs-body-text">
+                <p>The UI kit documents every component across the OX Trading Platform with a semantic variable system — colours, spacing, and type referenced by role, not raw value. Happy-path flows organised specifically for engineering reference, reducing the interpretation overhead that typically adds time to implementation.</p>
+                <p>The handoff received positive feedback from the development team — a signal that the organisation and documentation matched how they actually build.</p>
+              </div>
+              <p class="cs-statement">Good handoff means fewer Slack messages after delivery.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── 5. Results ────────────────────────────────────────── -->
+    <section class="cs-results" data-animate>
+      <div class="container">
+        <p class="cs-results__label cs-label">Results</p>
+
+        <div class="cs-stats" data-stagger>
+          <div class="cs-stat">
+            <span class="cs-stat__value">16</span>
+            <span class="cs-stat__label">Flows designed across trader, broker, and login experiences</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat__value">79</span>
+            <span class="cs-stat__label">Screens delivered across the platform</span>
+          </div>
+          <div class="cs-stat">
+            <span class="cs-stat__value">4</span>
+            <span class="cs-stat__label">Interconnected platforms redesigned</span>
+          </div>
+        </div>
+
+        <ul class="cs-outcomes" data-animate>
+          <li>OX Trading Platform key screens delivered across trader and broker views</li>
+          <li>Broker view — dashboard, order book, and trade book delivered</li>
+          <li>Login redesign — 7 flows explored and resolved</li>
+          <li>UI kit and component library with semantic variable system delivered</li>
+        </ul>
+
+        <blockquote class="cs-quote" data-animate>
+          <p class="cs-quote__text">Project complete — delivered across all four platforms.</p>
+          <p class="cs-quote__attribution">— Final status</p>
+        </blockquote>
+
+      </div>
+    </section>
+
+    <!-- ── 6. Next project ───────────────────────────────────── -->
+    <div class="cs-next" data-animate>
+      <div class="container">
+        <div>
+          <p class="cs-next__label">Next project</p>
+          <a href="arbo.html" class="cs-next__link">
+            Arbo
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h14M15 8l4 4-4 4" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <a href="../index.html" class="cs-next__back">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          All work
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__name">Andrew Argue</span>
+        <div class="footer__right">
+          <span class="footer__year">© 2026</span>
+          <a href="mailto:andrew.r.argue@gmail.com" class="footer__email">andrew.r.argue@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -13,8 +13,8 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
   --bg-2:       #111111;
   --bg-3:       #1C1C1C;
   --text:       #FFFFFF;
-  --text-muted: rgba(255,255,255,0.55);
-  --text-dim:   rgba(255,255,255,0.40);
+  --text-muted: rgba(255,255,255,0.72);
+  --text-dim:   rgba(255,255,255,0.55);
   --border:     rgba(255,255,255,0.08);
   --border-em:  rgba(255,255,255,0.18);
   --font:       'Instrument Sans', system-ui, sans-serif;

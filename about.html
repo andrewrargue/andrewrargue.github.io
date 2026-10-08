@@ -37,7 +37,7 @@
       <div class="container">
         <p class="about-label">About</p>
         <p class="about-statement">
-          I'm a product designer with 9+ years of experience, specialising in B2B SaaS product design and the design systems that keep products consistent at scale. Web design and conversion-focused marketing sites are a significant part of my practice — a depth that gives me an unusual ability to design across the full user journey, from acquisition through to core product experience.
+          I'm a product designer who also owns the web experience and design systems that support what I build. Over 9+ years in design, I've spent the last 3 focused specifically on product — shaping information hierarchy, interaction patterns, and component systems for B2B SaaS platforms. The years before that were spent in web and brand, which is why my product work tends to hold up under scrutiny from marketing, sales, and engineering — not just other designers.
         </p>
       </div>
     </section>
@@ -64,14 +64,14 @@
       <div class="container">
         <div class="about-stats-grid" data-stagger>
           <div class="about-stat-col">
-            <span class="about-stat-col__label">Years of<br>experience</span>
+            <span class="about-stat-col__label">Years in<br>design</span>
             <span class="about-stat-col__value">9+</span>
           </div>
           <div class="about-stat-col">
-            <span class="about-stat-col__label">Web<br>redesigns</span>
-            <span class="about-stat-col__value">20+</span>
+            <span class="about-stat-col__label">Focused in<br>product design</span>
+            <span class="about-stat-col__value">3+</span>
           </div>
-          <div class="about-stat-col">
+<div class="about-stat-col">
             <span class="about-stat-col__label">Web and Product<br>Design</span>
             <span class="about-stat-col__value">Systems</span>
           </div>
@@ -153,7 +153,7 @@
           <div class="about-split__content">
             <div class="about-currently">
               <p class="about-currently__label">Open to</p>
-              <p class="about-currently__text">Senior Product Designer roles at companies in Calgary or remote. Web design and design systems experience available as an added depth, not a separate pitch.</p>
+              <p class="about-currently__text">Senior Product Designer roles at B2B SaaS companies in Calgary or remote — with deep web and design systems experience as part of what I bring.</p>
             </div>
             <a href="contact.html" class="about-cta">
               Get in touch
@@ -181,6 +181,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/about-liquid.js"></script>
   <script>
     // ── Photo parallax ────────────────────────────────────────
     const photoWrap = document.getElementById('aboutPhoto');
@@ -198,7 +199,8 @@
         const sectionMid = rect.top + rect.height / 2;
         const progress = (sectionMid - viewH / 2) / viewH; // -1 → 1
         const scrollY = progress * 60; // max 60px shift
-        if (img) img.style.transform = `translateY(calc(${scrollY}px + ${mouseOffsetY}px)) translateX(${mouseOffsetX}px)`;
+        const t = `translateY(calc(${scrollY}px + ${mouseOffsetY}px)) translateX(${mouseOffsetX}px)`;
+        if (img) img.style.transform = t;
       }
 
       window.addEventListener('scroll', () => {
